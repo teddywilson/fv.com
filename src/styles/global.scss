@@ -42,6 +42,24 @@ $screen-xl-min: 1200px;
 
 * {
   font-family: 'Didact Gothic', sans-serif;
+
+  letter-spacing: .06em;
+
+  @include sm {
+    letter-spacing: .10em;
+  }
+
+  @include md {
+    letter-spacing: .20em;
+  }
+
+  @include lg {
+    letter-spacing: .20em;
+  }
+}
+
+a {
+  color: inherit;
 }
 
 body {
@@ -72,6 +90,11 @@ h2 {
   margin: 0;
   margin-top: 16px;
   font-size: 24px;
+}
+
+.subheading {
+  margin-top: 16px;
+  font-weight: 900;
 }
 
 .show-container {

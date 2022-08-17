@@ -24,8 +24,12 @@ export default () => (
 
 const IndexPage = ({ shows }) => (
   <div>
-    <h1>FV</h1>
-    <a href="mailto: familyvisiontheband@gmail.com">familyvisiontheband@gmail.com</a>
+    <h1>FAMILY VISION</h1>
+    <div className="subheading">
+      CONTACT: FAMILYVISION@GMAIL.COM
+      <br></br>
+      <a href="https://familyvision.bandcamp.com/album/plastic-form">"Plastic Form" out now</a>
+    </div>
     <ul>
       {shows.length > 0 &&
         shows.map((show, i) => {
@@ -36,14 +40,14 @@ const IndexPage = ({ shows }) => (
               (<h2>{year}</h2>)}
             <div className="show-container">
               <div className="show-date">
-                {date.toLocaleDateString("en", {
+                [{date.toLocaleDateString("en", {
                   month: "2-digit",
                   day: "2-digit"
-                })}</div>
-              <div className="show-content">{show.venue}; <u>{show.location}</u> – <em>{show.bands}</em></div>
+                })}]</div>
+              <div className="show-content">@ {show.venue} (<u>{show.location}</u>) <em>with</em> {show.bands}</div>
             </div>
           </div>
         })}
     </ul>
-  </div>
+  </div >
 )
