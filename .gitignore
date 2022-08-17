@@ -1,6 +1,9 @@
 # Generated files
 src/data/**
 
+# vscode
+.vscode/settings.json
+
 # Logs
 logs
 *.log
