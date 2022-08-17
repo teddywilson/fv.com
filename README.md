@@ -2,7 +2,7 @@
 
 ## Usage
 
-1. Install [Gatsby]()
+1. Install [Gatsby](https://www.gatsbyjs.com/):
 
 ```
 npm install -g gatsby-cli
