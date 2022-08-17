@@ -9,8 +9,12 @@ DOCUMENT_ID="2PACX-1vRO4CR0Z9OLYQYTdIP-lxbWXFPex26Iaelm0cElTBLQidovERlAeXfdzbjWr
 # The current directory of this script, regardless of where it's executed from.
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# Destination directory where resulting CSV will be stored. Create it if it doesn't already exist.
+DIR_DST="${SCRIPT_DIR}/src/data"
+mkdir -p ${DIR_DST}
+
 # Where the resulting CSV should be stored.
-FILE_DST="${SCRIPT_DIR}/src/data/calendar.csv"
+FILE_DST="${DIR_DST}/calendar.csv"
 
 # Download the file from Google Sheets.
 #   * -L will follow any redirects if present.
