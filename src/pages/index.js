@@ -20,6 +20,7 @@ export default () => (
 const IndexPage = ({ data }) => (
   <div>
     <h1>FV</h1>
+    <a href = "mailto: familyvisiontheband@gmail.com">familyvisiontheband@gmail.com</a>
     <ul>
       {data.allCalendarCsv.nodes.length > 0 &&
         data.allCalendarCsv.nodes.map((show, i) => {
@@ -29,10 +30,9 @@ const IndexPage = ({ data }) => (
             {(i == 0 || year !== new Date(data.allCalendarCsv.nodes[i - 1].date).getFullYear()) &&
               (<h2>{year}</h2>)}
             <h3>{date.toLocaleDateString("en", {
-              year: "numeric",
               month: "2-digit",
               day: "2-digit"
-            })} {show.venue} {show.location} {show.bands}</h3>
+            })} {show.venue}; <u>{show.location}</u> – <em>{show.bands}</em></h3>
           </div>
         })}
     </ul>
