@@ -1,5 +1,5 @@
 # Generated files
-./src/data/calendar.csv
+./src/data/**
 
 # Logs
 logs
