@@ -13,21 +13,26 @@ export default () => (
         }
       }
     `}
-    render={data => <IndexPage data={data} />}
+    render={data => {
+      data.allCalendarCsv.nodes.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date)
+      })
+      return <IndexPage shows={data.allCalendarCsv.nodes} />
+    }}
   />
 )
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ shows }) => (
   <div>
     <h1>FV</h1>
     <a href="mailto: familyvisiontheband@gmail.com">familyvisiontheband@gmail.com</a>
     <ul>
-      {data.allCalendarCsv.nodes.length > 0 &&
-        data.allCalendarCsv.nodes.map((show, i) => {
+      {shows.length > 0 &&
+        shows.map((show, i) => {
           let date = new Date(show.date);
           let year = date.getFullYear();
           return <div key={i}>
-            {(i == 0 || year !== new Date(data.allCalendarCsv.nodes[i - 1].date).getFullYear()) &&
+            {(i == 0 || year !== new Date(shows[i - 1].date).getFullYear()) &&
               (<h2>{year}</h2>)}
             <div className="show-container">
               <div className="show-date">

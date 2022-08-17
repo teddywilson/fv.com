@@ -1,11 +1,12 @@
 name: Deploy
 
+# Deploys on pushes to main as well as every hour.
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
