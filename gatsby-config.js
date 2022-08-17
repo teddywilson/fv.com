@@ -35,7 +35,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
-        icon: `assets/fv-temp.png`,
+        icon: `assets/black-square.png`,
       },
     },
   ],
