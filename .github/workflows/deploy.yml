@@ -1,6 +1,6 @@
 name: Deploy
 
-# Deploys on pushes to main as well as every hour.
+# Deploys on pushes to main, as well as every hour.
 on:
   push:
     branches:
