@@ -3,8 +3,7 @@ module.exports = {
     title: `Family Vision`,
     description: `Family Vision Website`,
     author: `@gatsbyjs`,
-    // TODO(teddywilson): Replace this.
-    siteUrl: `https://google.com/`,
+    siteUrl: `https://familyvision.band/`,
   },
   plugins: [
     `gatsby-transformer-csv`,
