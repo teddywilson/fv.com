@@ -16,7 +16,7 @@ yarn dev
 ```
 
 Under the hood `yarn dev` invokes `bash ./sync.sh` and `gatsby develop`. The former downloads the
-latest version of the Google calendar as a local CSV.
+latest version of the Google calendar as a local CSV; the latter starts the React app.
 
 ## TODO
 * Style the app.
