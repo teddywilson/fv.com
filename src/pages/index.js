@@ -37,7 +37,7 @@ const IndexPage = ({ shows }) => (
           let year = date.getFullYear();
           return <div key={i}>
             {(i == 0 || year !== new Date(shows[i - 1].date).getFullYear()) &&
-              (<h2>{year}</h2>)}
+              (<div className="date-header">{year}</div>)}
             <div className="show-container">
               <div className="show-date">
                 [{date.toLocaleDateString("en", {
