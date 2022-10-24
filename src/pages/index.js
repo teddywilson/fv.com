@@ -26,7 +26,7 @@ const IndexPage = ({ shows }) => (
   <div>
     <h1>FAMILY VISION</h1>
     <div className="subheading">
-      CONTACT: FAMILYVISION@GMAIL.COM
+      CONTACT: FAMILYVISIONTHEBAND@GMAIL.COM
       <br></br>
       <a href="https://familyvision.bandcamp.com/album/plastic-form">"Plastic Form" out now</a>
     </div>
