@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
@@ -41,20 +42,20 @@ $screen-xl-min: 1200px;
 }
 
 * {
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Didact Gothic", sans-serif;
 
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 
   @include sm {
-    letter-spacing: .10em;
+    letter-spacing: 0.1em;
   }
 
   @include md {
-    letter-spacing: .145em;
+    letter-spacing: 0.145em;
   }
 
   @include lg {
-    letter-spacing: .20em;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -85,13 +86,17 @@ ul {
 h1 {
   margin: 0px;
   font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 
   @include sm {
-    font-size: 64px;
+    font-size: 30px;
   }
 
   @include md {
-    font-size: 80px;
+    font-size: 48px;
   }
 
   @include lg {
@@ -127,7 +132,7 @@ h1 {
 .show-date {
   margin: 0;
   font-size: 16px;
-  font-family: 'lucida console', monospace;
+  font-family: "lucida console", monospace;
   padding-top: 1px;
 }
 
